@@ -28,7 +28,7 @@ $games = array_map(
         fn ($in): string => $translation[$in],
         explode(' ', trim($in))
     ),
-    file('input.txt')
+    file(__DIR__.'/input.txt')
 );
 
 $score = array_reduce(

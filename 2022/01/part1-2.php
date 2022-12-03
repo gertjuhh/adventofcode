@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 $elves = array_map(
     static fn ($in): int => array_sum(explode("\n", $in)),
-    preg_split('/^$/m', file_get_contents('input.txt'))
+    preg_split('/^$/m', file_get_contents(__DIR__.'/input.txt'))
 );
 
 rsort($elves);
